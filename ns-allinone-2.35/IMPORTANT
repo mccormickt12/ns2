@@ -1,0 +1,26 @@
+se put /home/netsys/research/ns-allinone-2.35/bin:/home/netsys/research/ns-allinone-2.35/tcl8.5.10/unix:/home/netsys/research/ns-allinone-2.35/tk8.5.10/unix
+into your PATH environment; so that you'll be able to run itm/tclsh/wish/xgraph.
+
+IMPORTANT NOTICES:
+
+(1) You MUST put /home/netsys/research/ns-allinone-2.35/otcl-1.14, /home/netsys/research/ns-allinone-2.35/lib, 
+    into your LD_LIBRARY_PATH environment variable.
+    If it complains about X libraries, add path to your X libraries 
+    into LD_LIBRARY_PATH.
+    If you are using csh, you can set it like:
+		setenv LD_LIBRARY_PATH <paths>
+    If you are using sh, you can set it like:
+		export LD_LIBRARY_PATH=<paths>
+
+(2) You MUST put /home/netsys/research/ns-allinone-2.35/tcl8.5.10/library into your TCL_LIBRARY environmental
+    variable. Otherwise ns/nam will complain during startup.
+
+
+After these steps, you can now run the ns validation suite with
+cd ns-2.35; ./validate
+
+For trouble shooting, please first read ns problems page 
+http://www.isi.edu/nsnam/ns/ns-problems.html. Also search the ns mailing list archive
+for related posts.
+
+
